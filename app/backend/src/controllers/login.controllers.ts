@@ -12,4 +12,10 @@ export default class LoginController {
 
     res.status(mapStatusHTTP(status)).json(data);
   }
+
+  public async findRole(_req: Request, res: Response) {
+    const { status, data } = await this.loginService.findRole(res.locals.email);
+
+    res.status(mapStatusHTTP(status)).json(data);
+  }
 }

@@ -6,6 +6,10 @@ import SequelizeUsers from '../database/models/SequelizeUsers';
 import Token from '../Interfaces/User/Token';
 import jwtUtil from '../utils/jwt.utils';
 
+type Role = {
+  role: string;
+};
+
 export default class loginService implements IUsersModel {
   private model = SequelizeUsers;
 
@@ -20,5 +24,15 @@ export default class loginService implements IUsersModel {
 
     const token = jwtUtil.sign({ email });
     return { status: 'SUCCESSFUL', data: { token } };
+  }
+
+  public async findRole(email: string): Promise<ServiceResponse<Role>> {
+    const user = await this.model.findOne({ where: { email } });
+
+    if (!user) {
+      return { status: 'UNAUTHORIZED', data: { message: 'User not found' } };
+    }
+
+    return { status: 'SUCCESSFUL', data: { role: user.dataValues.role } };
   }
 }
