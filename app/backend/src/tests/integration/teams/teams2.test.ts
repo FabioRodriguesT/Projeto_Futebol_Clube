@@ -1,8 +1,8 @@
 import sinon from 'sinon';
 import chai from 'chai';
 import chaiHttp from 'chai-http';
-import { app } from '../app';
-import { botafogo } from './mocks/teams.mock';
+import { app } from '../../../app';
+import { botafogo } from '../../mocks/teams.mock';
 
 const expect = chai.expect
 
