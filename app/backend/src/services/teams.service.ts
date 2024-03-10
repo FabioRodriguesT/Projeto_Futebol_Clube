@@ -3,7 +3,7 @@ import { ServiceResponse } from '../Interfaces/ServiceResponse';
 import ITeams from '../Interfaces/Teams/ITeams';
 import { ITeamsModel } from '../Interfaces/Teams/ITeamsModel';
 
-export default class TeamsServices implements ITeamsModel {
+export default class TeamsService implements ITeamsModel {
   private model = SequelizeTeams;
 
   public async getAllTeams(): Promise<ServiceResponse<ITeams[]>> {
