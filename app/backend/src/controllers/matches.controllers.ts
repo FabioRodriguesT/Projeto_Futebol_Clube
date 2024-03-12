@@ -41,7 +41,6 @@ export default class MatchesController {
   public async createAMatch(_req: Request, res: Response) {
     const { homeTeamId, awayTeamId, homeTeamGoals, awayTeamGoals } = _req.body;
 
-    console.log(_req.body);
     const { status, data } = await this.matchesService.createAMatch(
       homeTeamId,
       awayTeamId,

@@ -5,13 +5,13 @@ import { app } from '../app';
 import ValidationsLogin from '../middlewares/validateLogin';
 import { tokenMock } from './mocks/user.mock';
 import jwtUtils from '../utils/jwt.utils';
-import { Request, Response } from 'express';
+import { Request } from 'express';
 
 const expect = chai.expect
 
 chai.use(chaiHttp);
 
-describe('Testando a rota de times', () => {
+describe('Testando a rota de login', () => {
   beforeEach(function () { sinon.restore(); }); 
 
   it('Fazendo login com sucesso e recebendo um token de resposta.', async function() {

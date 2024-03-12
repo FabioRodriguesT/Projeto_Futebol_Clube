@@ -30,7 +30,6 @@ export default class matchesService implements IMatchesModel {
 
   public async finishAMatch(id: number): Promise<ServiceResponse<{ message: string }>> {
     await this.model.update({ inProgress: false }, { where: { id } });
-
     return { status: 'SUCCESSFUL', data: { message: 'Finish' } };
   }
 

@@ -5,12 +5,15 @@ const loginMock = {
 
 const tokenMock = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImlhdCI6MTcxMDE4MDEyOX0.2NCoTj4JoSRRekbaa-cfxDWByxmA_RWOt5cwxJTPJWo"
 
+const bearerMock = `Bearer ${tokenMock}`;
+
 const authorizationMock = {
-  Authorization: `Bearer ${tokenMock}` 
+  Authorization: bearerMock
 }
 
 export {
   loginMock,
   tokenMock,
-  authorizationMock
+  authorizationMock,
+  bearerMock
 }

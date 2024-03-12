@@ -6,7 +6,6 @@ export default class ValidationsMatch {
   static async checkingTeamExistence(id: number) {
     const teamsService = new TeamsService();
     const team = await teamsService.getTeamById(id);
-    console.log('times', team);
 
     if (team.status === 'SUCCESSFUL') {
       return true;
