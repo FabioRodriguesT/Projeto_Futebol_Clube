@@ -24,4 +24,31 @@ export default class MatchesController {
 
     res.status(mapStatusHTTP(status)).json(data);
   }
+
+  public async changeResultMatch(_req: Request, res: Response) {
+    const { id } = _req.params;
+    const { homeTeamGoals, awayTeamGoals } = _req.body;
+
+    const { status, data } = await this.matchesService.changeResultMatch(
+      Number(id),
+      homeTeamGoals,
+      awayTeamGoals,
+    );
+
+    res.status(mapStatusHTTP(status)).json(data);
+  }
+
+  public async createAMatch(_req: Request, res: Response) {
+    const { homeTeamId, awayTeamId, homeTeamGoals, awayTeamGoals } = _req.body;
+
+    console.log(_req.body);
+    const { status, data } = await this.matchesService.createAMatch(
+      homeTeamId,
+      awayTeamId,
+      homeTeamGoals,
+      awayTeamGoals,
+    );
+
+    res.status(mapStatusHTTP(status)).json(data);
+  }
 }

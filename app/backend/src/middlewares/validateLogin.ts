@@ -3,7 +3,7 @@ import mapStatusHTTP from '../utils/mapStatusHTTP';
 import jwtUtil from '../utils/jwt.utils';
 
 class ValidationsLogin {
-  static validateLogin(req: Request, res: Response, next: NextFunction): Response | void {
+  static validateLogin(req: Request, res: Response, next: NextFunction) {
     const user = req.body;
 
     if (!user.email || !user.password) {
