@@ -23,7 +23,12 @@ export default class matchesService implements IMatchesModel {
       }],
     });
 
-    console.log('MATCHES', matches.length);
     return { status: 'SUCCESSFUL', data: matches };
+  }
+
+  public async finishAMatch(id: number): Promise<ServiceResponse<{ message: string }>> {
+    await this.model.update({ inProgress: false }, { where: { id } });
+
+    return { status: 'SUCCESSFUL', data: { message: 'Finish' } };
   }
 }

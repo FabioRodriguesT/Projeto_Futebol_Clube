@@ -16,4 +16,12 @@ export default class MatchesController {
 
     res.status(mapStatusHTTP(status)).json(data);
   }
+
+  public async finishAMatch(_req: Request, res: Response) {
+    const { id } = _req.params;
+
+    const { status, data } = await this.matchesService.finishAMatch(Number(id));
+
+    res.status(mapStatusHTTP(status)).json(data);
+  }
 }
