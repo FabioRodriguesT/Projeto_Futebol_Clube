@@ -1,3 +1,4 @@
+import ILeaderboardModel from '../Interfaces/Leaderboard/ILeaderboardModel';
 import ILeaderBoard from '../Interfaces/Leaderboard/ILeaderboard';
 import sortLeaderboard from '../utils/sortBoard';
 import SequelizeTeams from '../database/models/SequelizeTeams';
@@ -5,7 +6,7 @@ import SequelizeMatches from '../database/models/SequelizeMatches';
 import { ServiceResponse } from '../Interfaces/ServiceResponse';
 import GenerateLeaderboard from '../utils/leaderboard';
 
-export default class leaderboardService {
+export default class leaderboardService implements ILeaderboardModel {
   private teamsModel = SequelizeTeams;
   private matchesModel = SequelizeMatches;
 
@@ -15,11 +16,15 @@ export default class leaderboardService {
     const mapTeams = teams.map((team) => team.dataValues);
 
     const mapBoard = mapTeams.map(async ({ id, teamName }) => {
-      const matchesHome = await this.matchesModel.findAll({ where: { homeTeamId: id } });
+      const matchesHome = await this.matchesModel.findAll({
+        where: { homeTeamId: id, inProgress: false },
+      });
 
       const mapMatchesHome = matchesHome.map((match) => match.dataValues);
 
-      const matchesAway = await this.matchesModel.findAll({ where: { homeTeamId: id } });
+      const matchesAway = await this.matchesModel.findAll({
+        where: { awayTeamId: id, inProgress: false },
+      });
 
       const mapMatchesAway = matchesAway.map((match) => match.dataValues);
 
@@ -37,12 +42,17 @@ export default class leaderboardService {
   public async getLeaderboardHome(): Promise<ServiceResponse<ILeaderBoard[]>> {
     const teams = await this.teamsModel.findAll();
     const mapTeams = teams.map((team) => team.dataValues);
-    const matches = await this.matchesModel.findAll({ where: { inProgress: false } });
 
-    const mapBoard = mapTeams.map(({ id, teamName }) => {
+    const mapBoard = mapTeams.map(async ({ id, teamName }) => {
       const teamBoard = new GenerateLeaderboard(teamName);
 
-      const matchesHome = matches
+      const matches = await this.matchesModel.findAll({
+        where: { inProgress: false, homeTeamId: id },
+      });
+
+      const mapMatches = matches.map((match) => match.dataValues);
+
+      const matchesHome = mapMatches
         .filter((match) => match.homeTeamId === id);
 
       teamBoard.homeTeamData(matchesHome);
@@ -57,13 +67,19 @@ export default class leaderboardService {
   public async getLeaderboardAway(): Promise<ServiceResponse<ILeaderBoard[]>> {
     const teams = await this.teamsModel.findAll();
     const mapTeams = teams.map((team) => team.dataValues);
-    const matches = await this.matchesModel.findAll({ where: { inProgress: false } });
 
-    const mapBoard = mapTeams.map(({ id, teamName }) => {
+    const mapBoard = mapTeams.map(async ({ id, teamName }) => {
       const teamBoard = new GenerateLeaderboard(teamName);
 
-      const machesAway = matches
+      const matches = await this.matchesModel.findAll({
+        where: { inProgress: false, awayTeamId: id },
+      });
+
+      const mapMatches = matches.map((match) => match.dataValues);
+
+      const machesAway = mapMatches
         .filter((match) => match.awayTeamId === id);
+
       teamBoard.awayTeamData(machesAway);
 
       return teamBoard.generateBoardData();

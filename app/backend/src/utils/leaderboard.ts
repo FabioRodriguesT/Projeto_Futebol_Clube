@@ -1,6 +1,6 @@
 import IMatches from '../Interfaces/Matches/IMatches';
 
-export default class generateLeaderboard {
+export default class GenerateLeaderboard {
   private homeVictories = 0;
   private homeDraws = 0;
   private homeDefeat = 0;
@@ -31,9 +31,9 @@ export default class generateLeaderboard {
 
   public awayTeamData(matches: IMatches[]) {
     matches.forEach((match) => {
-      this.goalsFavor += match.homeTeamGoals;
-      this.goalsOwn += match.awayTeamGoals;
-      if (match.homeTeamGoals > match.awayTeamGoals) {
+      this.goalsFavor += match.awayTeamGoals;
+      this.goalsOwn += match.homeTeamGoals;
+      if (match.awayTeamGoals > match.homeTeamGoals) {
         this.awayVictories += 1;
       } else if (match.homeTeamGoals === match.awayTeamGoals) {
         this.awayDraws += 1;
@@ -67,7 +67,7 @@ export default class generateLeaderboard {
     const totalPoints = this.calculateTotalPoints();
     const totalGames = this.calculateTotalGames();
 
-    return Number(((totalPoints / (totalGames * 3)) * 100).toFixed(2));
+    return Number(((totalPoints / (totalGames * 3)) * 100).toFixed(2)) || 0;
   }
 
   public generateBoardData() {
@@ -83,6 +83,7 @@ export default class generateLeaderboard {
       goalsBalance: this.goalsFavor - this.goalsOwn,
       efficiency: this.calculateEfficiency(),
     };
+
     return boardData;
   }
 }
