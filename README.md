@@ -7,6 +7,8 @@
 Para orientar a construção das tabelas através do ORM, utilize o DER a seguir:
 <p align="center"><img src="./futebol_clube_database.png"></p>
 
+# Instalação
+
 <!-- Olá, Tryber!
 Esse é apenas um arquivo inicial para o README do seu projeto.
 É essencial que você preencha esse documento por conta própria, ok?
