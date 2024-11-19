@@ -56,7 +56,7 @@ Para orientar a construção das tabelas através do ORM, utilize o DER a seguir
   docker-compose down --rmi local --volumes --remove-orphans
 ```
 
-## Dependencias
+## Dependências
 
 ### Dependencies: ###
 <ul>
