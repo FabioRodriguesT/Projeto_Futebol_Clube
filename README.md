@@ -1,12 +1,12 @@
 # Descrição
 
-ProjetoFutebol Clube é uma aplicação Full Stack que permite ao usuário ter acesso a um informativo sobre partidas e classificações de futebol. Podendo listar clubes cadastrados, listar partidas em andamento e finalizadas, criação de novas partidas, atualizar placar de partidas em andamento, finalizar partidas em andamento e gerar um leaderboard de time de fora e time de casa.
+<span>Projeto Futebol Clube</span> é uma aplicação Full Stack que permite ao usuário ter acesso a um informativo sobre partidas e classificações de futebol. Podendo listar clubes cadastrados, listar partidas em andamento e finalizadas, criação de novas partidas, atualizar placar de partidas em andamento, finalizar partidas em andamento e gerar um leaderboard de time de fora e time de casa.
 
 # Diagrama de Entidade e Relacionamento
 
 Para orientar a construção das tabelas através do ORM, utilize o DER a seguir:
 
- ![Diagrama de Entidade do Blogs-API](./blogs_api_database.png)
+ ![Diagrama de Entidade do Projeto Futebol Clube](./futebol_clube_database.png)
 
 <!-- Olá, Tryber!
 Esse é apenas um arquivo inicial para o README do seu projeto.
