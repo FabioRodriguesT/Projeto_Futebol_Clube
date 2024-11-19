@@ -50,12 +50,9 @@ Para orientar a construção das tabelas através do ORM, utilize o DER a seguir
   docker-compose down --rmi local --volumes --remove-orphans
 ```
 
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# Dependencias
+
+# Licença
+
+Este projeto é licenciado sob a Licença MIT. Boa codificação!
+
