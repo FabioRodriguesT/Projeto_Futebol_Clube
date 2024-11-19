@@ -1,4 +1,10 @@
-# :construction: README em construção ! :construction:
+# Descrição
+
+ProjetoFutebol Clube é uma aplicação Full Stack que permite ao usuário ter acesso a um informativo sobre partidas e classificações de futebol. Podendo listar clubes cadastrados, listar partidas em andamento e finalizadas, criação de novas partidas, atualizar placar de partidas em andamentos, finalizar partidas em andamentos e gerar um leaderboard de time de fora e time de casa.
+
+
+
+
 <!-- Olá, Tryber!
 Esse é apenas um arquivo inicial para o README do seu projeto.
 É essencial que você preencha esse documento por conta própria, ok?
