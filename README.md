@@ -4,7 +4,7 @@
 
 ## Sumário
 - [Diagrama de Entidade e Relacionamento](#Diagrama-de-Entidade-e-Relacionamento)
-- .[Sobre o projeto](#Sobre-o-projeto)
+- [Sobre o projeto](#Sobre-o-projeto)
 - [Instalação](#Instalação)
 - [Dependências](#Dependências)
 - [Licença](#Licença)
@@ -16,7 +16,7 @@ Para orientar a construção das tabelas através do ORM, utilize o DER a seguir
 
 ## Sobre o projeto
 
-O projeto é um site informativo sobre partidas e classificações de futebol! ⚽️
+O projeto é um site informativo sobre partidas e classificações de futebol!
 
 ### O que foi desenvolvido:
 
