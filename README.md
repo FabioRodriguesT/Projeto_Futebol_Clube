@@ -6,7 +6,7 @@
 
 Para orientar a construção das tabelas através do ORM, utilize o DER a seguir:
 
- ![Diagrama de Entidade do Projeto Futebol Clube](./futebol_clube_database.png){ width="800" height="600" style="display: block; margin: 0 auto" }
+ ![Diagrama de Entidade do Projeto Futebol Clube](./futebol_clube_database.png)
 
 <!-- Olá, Tryber!
 Esse é apenas um arquivo inicial para o README do seu projeto.
