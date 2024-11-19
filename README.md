@@ -9,7 +9,7 @@ Para orientar a construção das tabelas através do ORM, utilize o DER a seguir
 
 # Instalação
 
-### Prerequisites
+### Pré-requisitos
 - **Docker** e **Docker-Compose**.
 - **Node.js** e **npm**.
 
