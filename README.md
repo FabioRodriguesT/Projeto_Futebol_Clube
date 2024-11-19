@@ -4,6 +4,10 @@ ProjetoFutebol Clube é uma aplicação Full Stack que permite ao usuário ter a
 
 # Diagrama de Entidade e Relacionamento
 
+Para orientar a construção das tabelas através do ORM, utilize o DER a seguir:
+
+ ![Diagrama de Entidade do Blogs-API](./blogs_api_database.png)
+
 <!-- Olá, Tryber!
 Esse é apenas um arquivo inicial para o README do seu projeto.
 É essencial que você preencha esse documento por conta própria, ok?
