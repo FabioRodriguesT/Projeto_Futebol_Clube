@@ -15,7 +15,7 @@ Para orientar a construção das tabelas através do ORM, utilize o DER a seguir
 
 1. Clone o repositório
 ```bash
-  git clone git@github.com:Fedolfo/Trybe-futebol-clube.git
+  git clone git@github.com:FabioRodriguesT/Projeto_Futebol_Clube.git
 ```
 2. Entre no arquivo
 ```bash
