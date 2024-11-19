@@ -20,11 +20,20 @@ O projeto é um site informativo sobre partidas e classificações de futebol!
 
 ### O que foi desenvolvido:
 
-Foi desenvolvido uma API (utilizando o método TDD) e também integrar - através do docker-compose - as aplicações para que elas funcionem consumindo um banco de dados.
+- Foi desenvolvido uma API (utilizando o método TDD) e também integrar - através do docker-compose - as aplicações para que elas funcionem consumindo um banco de dados.
 
 Também construimos um back-end dockerizado utilizando modelagem de dados através do Sequelize. Seu desenvolvimento deve respeitar regras de negócio providas no projeto e sua API deve ser capaz de ser consumida por um front-end já provido nesse projeto.
 
 O back-end implementou regras de negócio para popular adequadamente a tabela disponível no front-end que será exibida para a pessoa usuária do sistema.
+
+### Habilidades Desenvolvidas:
+
+Realização da dockerização dos apps, network, volume e compose;
+    A modelagem de dados com MySQL através do Sequelize;
+    A criação e associação de tabelas usando models do sequelize;
+    A construção de uma API REST com endpoints para consumir os models criados;
+    A construção de um CRUD com TypeScript, utilizando ORM;
+
 
 ## Instalação
 
