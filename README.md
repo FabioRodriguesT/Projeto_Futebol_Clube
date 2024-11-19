@@ -52,6 +52,32 @@ Para orientar a construção das tabelas através do ORM, utilize o DER a seguir
 
 # Dependencias
 
+### Dependencies: ###
+<ul>
+    <li>camelcase</li>
+    <li>http-status-codes</li>
+    <li>jsonwebtoken</li>
+    <li>puppeteer</li>
+    <li>uuid</li>
+</ul>
+
+
+### Depêndencias de Desenvolvimento: ### 
+
+<ul>
+    <li>jest-dom</li>
+    <li>react</li>
+    <li>user-event</li>
+    <li>axios</li>
+    <li>jest</li>
+    <li>mocha</li>
+    <li>mysql2</li>
+    <li>nyc</li>
+    <li>sequelize</li>
+    <li>sequelize-cli</li>
+</ul>
+
+
 # Licença
 
 Este projeto é licenciado sob a Licença MIT. Boa codificação!
