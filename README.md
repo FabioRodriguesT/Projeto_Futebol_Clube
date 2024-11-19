@@ -1,13 +1,19 @@
-# Descrição
+## Descrição
 
 **Projeto Futebol Clube** é uma aplicação Full Stack que permite ao usuário ter acesso a um informativo sobre partidas e classificações de futebol. Podendo listar clubes cadastrados, listar partidas em andamento e finalizadas, criação de novas partidas, atualizar placar de partidas em andamento, finalizar partidas em andamento e gerar um leaderboard de time de fora e time de casa.
 
-# Diagrama de Entidade e Relacionamento
+## Sumário
+- [Diagrama de Entidade e Relacionamento](#Diagrama-de-Entidade-e-Relacionamento)
+- [Instalação](#Instalação)
+- [Dependências](#Dependências)
+- [Licença](#Licença)
+
+## Diagrama de Entidade e Relacionamento
 
 Para orientar a construção das tabelas através do ORM, utilize o DER a seguir:
 <p align="center"><img src="./futebol_clube_database.png"></p>
 
-# Instalação
+## Instalação
 
 ### Pré-requisitos
 - **Docker** e **Docker-Compose**.
@@ -50,7 +56,7 @@ Para orientar a construção das tabelas através do ORM, utilize o DER a seguir
   docker-compose down --rmi local --volumes --remove-orphans
 ```
 
-# Dependencias
+## Dependencias
 
 ### Dependencies: ###
 <ul>
@@ -78,7 +84,7 @@ Para orientar a construção das tabelas através do ORM, utilize o DER a seguir
 </ul>
 
 
-# Licença
+## Licença
 
 Este projeto é licenciado sob a Licença MIT. Boa codificação!
 
