@@ -19,7 +19,7 @@ Para orientar a construção das tabelas através do ORM, utilize o DER a seguir
 ```
 2. Entre no arquivo
 ```bash
-  cd Trybe-futebol-clube
+  cd Projeto-futebol-clube
 ```
 3. Suba os containêrs
 ```bash
