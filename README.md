@@ -58,7 +58,7 @@ Para orientar a construção das tabelas através do ORM, utilize o DER a seguir
 
 ## Dependências
 
-### Dependencies: ###
+### Dependencias: ###
 <ul>
     <li>camelcase</li>
     <li>http-status-codes</li>
