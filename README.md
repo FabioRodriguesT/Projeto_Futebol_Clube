@@ -4,6 +4,7 @@
 
 ## Sumário
 - [Diagrama de Entidade e Relacionamento](#Diagrama-de-Entidade-e-Relacionamento)
+- .[Sobre o projeto](#Sobre-o-projeto)
 - [Instalação](#Instalação)
 - [Dependências](#Dependências)
 - [Licença](#Licença)
@@ -12,6 +13,18 @@
 
 Para orientar a construção das tabelas através do ORM, utilize o DER a seguir:
 <p align="center"><img src="./futebol_clube_database.png"></p>
+
+## Sobre o projeto
+
+O projeto é um site informativo sobre partidas e classificações de futebol! ⚽️
+
+### O que foi desenvolvido:
+
+Foi desenvolvido uma API (utilizando o método TDD) e também integrar - através do docker-compose - as aplicações para que elas funcionem consumindo um banco de dados.
+
+Também construimos um back-end dockerizado utilizando modelagem de dados através do Sequelize. Seu desenvolvimento deve respeitar regras de negócio providas no projeto e sua API deve ser capaz de ser consumida por um front-end já provido nesse projeto.
+
+O back-end implementou regras de negócio para popular adequadamente a tabela disponível no front-end que será exibida para a pessoa usuária do sistema.
 
 ## Instalação
 
