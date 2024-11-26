@@ -6,6 +6,7 @@
 - [Diagrama de Entidade e Relacionamento](#Diagrama-de-Entidade-e-Relacionamento)
 - [Sobre o projeto](#Sobre-o-projeto)
 - [Instalação](#Instalação)
+- [Instruções de utilização do projeto](#Instruções-de-utilização-do-projeto)
 - [Dependências](#Dependências)
 - [Licença](#Licença)
 
@@ -76,6 +77,29 @@ O projeto é um site informativo sobre partidas e classificações de futebol!
 ```bash
   docker-compose down --rmi local --volumes --remove-orphans
 ```
+
+## Instruções de utilização do projeto:
+
+Utilize algum aplicativo ou extensão do VSCode para realizar as requisições.
+
+Exemplo: ThunderClient, Insomnia, entre outros.
+
+### Rotas disponíveis
+
+<table>
+  <thead>
+    <tr>
+      <th>Rota</th>
+      <th>Funcionalidade</th>
+      <th>Tipo de Requisição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 ## Dependências
 
