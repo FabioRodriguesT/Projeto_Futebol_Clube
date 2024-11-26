@@ -153,7 +153,7 @@ Exemplo: ThunderClient, Insomnia, entre outros.
     <tr>
       <td>GET</td>
       <td>/leaderboard/away</td>
-      <td>Lista informações do desempenho dos times vistantes.</td>
+      <td>Lista informações do desempenho dos times visitantes.</td>
     </tr>
   </tbody>
 </table>
