@@ -96,7 +96,64 @@ Exemplo: ThunderClient, Insomnia, entre outros.
   </thead>
   <tbody>
     <tr>
-      <td></td>
+      <td>POST</td>
+      <td>/login</td>
+      <td>Realiza login na aplicação.</td>
+    </tr>
+    <tr>
+      <td>GET</td>
+      <td>/login/role</td>
+      <td>Verifica a validação do token de login.</td>
+    </tr>
+    <tr>
+      <td>GET</td>
+      <td>/teams</td>
+      <td>Lista todos os times cadastrados.</td>
+    </tr>
+    <tr>
+      <td>GET</td>
+      <td>/teams/:id</td>
+      <td>Lista um time especifico.</td>
+    </tr>
+    <tr>
+      <td>GET</td>
+      <td>/matches</td>
+      <td>Lista todas as partidas.</td>
+    </tr>
+    <tr>
+      <td>GET</td>
+      <td>matches?inProgress=true</td>
+      <td>Lista todas as partidas em andamento.</td>
+    </tr>
+    <tr>
+      <td>GET</td>
+      <td>matches?inProgress=false</td>
+      <td>Lista todas as partidas já finalizadas.</td>
+    </tr>
+    <tr>
+      <td>PATCH</td>
+      <td>/matches/:id/finish</td>
+      <td>Finaliza uma partida pelo seu id especifico.</td>
+    </tr>
+    <tr>
+      <td>PATCH</td>
+      <td>/matches/:id</td>
+      <td>Atualiza uma partida pelo seu id especifico.</td>
+    </tr>
+    <tr>
+      <td>POST</td>
+      <td>/matches</td>
+      <td>Cadastra uma nova partida.</td>
+    </tr>
+    <tr>
+      <td>GET</td>
+      <td>/leaderboard/home</td>
+      <td>Lista informações do desempenho dos times de casa.</td>
+    </tr>
+    <tr>
+      <td>GET</td>
+      <td>/leaderboard/away</td>
+      <td>Lista informações do desempenho dos times vistantes.</td>
     </tr>
   </tbody>
 </table>
