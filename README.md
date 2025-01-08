@@ -98,64 +98,64 @@ Exemplo: ThunderClient, Insomnia.
   </thead>
   <tbody>
     <tr>
-      <td>POST</td>
-      <td>/login</td>
+      <th>/login</th>
       <td>Realiza login na aplicação.</td>
+      <th>POST</th>
     </tr>
     <tr>
-      <td>GET</td>
-      <td>/login/role</td>
+      <th>/login/role</th>
       <td>Verifica a validação do token de login.</td>
+      <th>GET</th>
     </tr>
     <tr>
-      <td>GET</td>
-      <td>/teams</td>
+      <th>/teams</th>
       <td>Lista todos os times cadastrados.</td>
+      <th>GET</th>
     </tr>
     <tr>
-      <td>GET</td>
-      <td>/teams/:id</td>
+      <th>/teams/:id</th>
       <td>Lista um time especifico.</td>
+      <th>GET</th>
     </tr>
     <tr>
-      <td>GET</td>
-      <td>/matches</td>
+      <th>/matches</th>
       <td>Lista todas as partidas.</td>
+      <th>GET</th>
     </tr>
     <tr>
-      <td>GET</td>
-      <td>matches?inProgress=true</td>
+      <th>matches?inProgress=true</th>
       <td>Lista todas as partidas em andamento.</td>
+      <th>GET</th>
     </tr>
     <tr>
-      <td>GET</td>
-      <td>matches?inProgress=false</td>
+      <th>matches?inProgress=false</th>
       <td>Lista todas as partidas já finalizadas.</td>
+      <th>GET</th>
     </tr>
     <tr>
-      <td>PATCH</td>
-      <td>/matches/:id/finish</td>
+      <th>/matches/:id/finish</th>
       <td>Finaliza uma partida pelo seu id especifico.</td>
+      <th>PATCH</th>
     </tr>
     <tr>
-      <td>PATCH</td>
-      <td>/matches/:id</td>
+      <th>/matches/:id</th>
       <td>Atualiza uma partida pelo seu id especifico.</td>
+      <th>PATCH</th>
     </tr>
     <tr>
-      <td>POST</td>
-      <td>/matches</td>
+      <th>/matches</th>
       <td>Cadastra uma nova partida.</td>
+      <th>POST</th>
     </tr>
     <tr>
-      <td>GET</td>
-      <td>/leaderboard/home</td>
+      <th>/leaderboard/home</th>
       <td>Lista informações do desempenho dos times de casa.</td>
+      <th>GET</th>
     </tr>
     <tr>
-      <td>GET</td>
-      <td>/leaderboard/away</td>
+      <th>/leaderboard/away</th>
       <td>Lista informações do desempenho dos times visitantes.</td>
+      <th>GET</th>
     </tr>
   </tbody>
 </table>
