@@ -1,6 +1,8 @@
 ## Descrição
 
-**Projeto Futebol Clube** é uma aplicação Full Stack que permite ao usuário ter acesso a um informativo sobre partidas e classificações de futebol. Podendo listar clubes cadastrados, listar partidas em andamento e finalizadas, criação de novas partidas, atualizar placar de partidas em andamento, finalizar partidas em andamento e gerar um leaderboard de time de fora e time de casa.
+**Projeto Futebol Clube** é uma aplicação Full Stack que permite ao usuário ter acesso a um informativo sobre partidas e classificações de futebol. 
+O sistema possibilita listar clubes cadastrados, listar partidas em andamento e finalizadas, criar novas partidas, atualizar o placar de partidas em andamento, 
+finalizar partidas e gerar um leaderboard com informações sobre o desempenho dos times..
 
 ## Sumário
 - [Diagrama de Entidade e Relacionamento](#Diagrama-de-Entidade-e-Relacionamento)
@@ -21,19 +23,19 @@ O projeto é um site informativo sobre partidas e classificações de futebol!
 
 ### O que foi desenvolvido:
 
-- Foi desenvolvido uma API (utilizando o método TDD) e também integrar - através do docker-compose - as aplicações para que elas funcionem consumindo um banco de dados.
+- Foi desenvolvido uma API (utilizando o método TDD) e integrada com docker-compose, permitindo que as aplicações funcionem consumindo um banco de dados MySQL.
 
-- Também construimos um back-end dockerizado utilizando modelagem de dados através do Sequelize. Seu desenvolvimento deve respeitar regras de negócio providas no projeto e sua API deve ser capaz de ser consumida por um front-end já provido nesse projeto.
+- O backend foi desenvolvido utilizando modelagem de dados através do Sequelize, respeitando as regras de negócio definidas no projeto. A API foi construída para ser consumida por um front-end já provido neste repositório.
 
-- O back-end implementou regras de negócio para popular adequadamente a tabela disponível no front-end que será exibida para a pessoa usuária do sistema.
+- Implementação de regras de negócio para popular a tabela de classificação e os dados de partidas.
 
 ### Habilidades Desenvolvidas:
 
-- Realização da dockerização dos apps, network, volume e compose;
-- Modelagem de dados com MySQL através do Sequelize;
-- Criação e associação de tabelas usando models do sequelize;
-- Construção de uma API REST com endpoints para consumir os models criados;
-- Construção de um CRUD com TypeScript, utilizando ORM;
+- Dockerização das aplicações com redes, volumes e Compose;
+- Modelagem de dados com MySQL utilizando Sequelize;
+- Criação e associação de tabelas com os models do Sequelize;
+- Construção de uma API RESTful com endpoints para consumir os models criados;
+- Implementação de um CRUD utilizando TypeScript e ORM.
 
 ## Instalação
 
@@ -41,39 +43,39 @@ O projeto é um site informativo sobre partidas e classificações de futebol!
 - **Docker** e **Docker-Compose**.
 - **Node.js** e **npm**.
 
-1. Clone o repositório
+1. Clone o repositório:
 ```bash
   git clone git@github.com:FabioRodriguesT/Projeto_Futebol_Clube.git
 ```
-2. Entre no arquivo
+2. Navegue para o diretório do projeto:
 ```bash
   cd Projeto-futebol-clube
 ```
-3. Suba os containêrs
+3. Suba os containers com o comando:
 ```bash
   npm run compose:up ou docker-compose up -d --build
 ```
-4. No momento que subir os container retornara essa messagem no terminal
+4. Após o comando, o terminal mostrará a seguinte mensagem:
 ```bash
   Creating db ... done
   Creating app_backend_1 ... done
   Creating app_frontend_1 ... done
 ```
-5. Para acessar as aplicação
+5. Para acessar as aplicações, utilize os seguintes links:
 ```bash
   front-end: localhost:3000
   back-end: localhost:3001
 ```
-  Para a realização do login no front-end:
+6. Para realizar o login no front-end, use as credenciais:
 ```bash
   login: admin@admin.com
   senha: secret_admin
 ```
-6. Para rodar os testes de integração, caso estiver na raiz do projeto
+7. Para rodar os testes de integração, execute o seguinte comando, caso esteja na raiz do projeto:
 ```bash
   cd app && docker-compose exec backend npm test
 ```
-7. Para remover a API
+8. Para remover a API, execute:
 ```bash
   docker-compose down --rmi local --volumes --remove-orphans
 ```
@@ -82,7 +84,7 @@ O projeto é um site informativo sobre partidas e classificações de futebol!
 
 Utilize algum aplicativo ou extensão do VSCode para realizar as requisições.
 
-Exemplo: ThunderClient, Insomnia, entre outros.
+Exemplo: ThunderClient, Insomnia.
 
 ### Rotas disponíveis
 
